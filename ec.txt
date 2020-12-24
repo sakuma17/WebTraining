@@ -1,0 +1,55 @@
+プレアデス4.8
+ワークスペースの切り替え →フォルダ選択
+
+ヘルプ
+http://vrapper.sourceforge.net/update-site/stable
+下2つにチェック
+
+ウインドウ　パ－スペクティブ
+開く　その他　Java EE
+
+新規　動的Web プロジェクト
+tomcat8 (Java8)
+サーバータグ
+tomcat8.5 完了
+
+左側のプロジェクト名を右クリ→新規 html
+WebContent内
+cssフォルダ cssファイル
+
+プロジェクト名　右クリでサーブレット
+クラス名入力で作成
+
+Javaリソース
+src
+デフォルトパッケ
+ServletTest.java 実行
+
+
+継承してクラスを作る時
+スーパークラスからのコンストラクタ
+model.Monster
+パッケ名.クラス名
+
+<%=import ="パッケ名.*"%>
+
+ファイル>インポート>一般>該当フォルダ
+
+変数名 右クリ>リファクタリング>名前変更
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%
+ String str="Hello World";
+ %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p><%=str %></p>
+
+</body>
+</html>
