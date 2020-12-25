@@ -16,7 +16,7 @@
 </head>
 <body>
 <table border="1">
-<p>九九表</p>
+<caption>九九表</caption>
 <% for(int i=0;i<nums.length;i++){ %>
 <tr>
 	<% for(int j=0;j<nums[i].length;j++){%>
