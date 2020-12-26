@@ -2,6 +2,7 @@
     pageEncoding="UTF-8" %>
 <%@ page import="model.Health" %>
 <% Health health=(Health)request.getAttribute("health"); %>
+<%--object型で格納されているのでHealth型にダウンキャストしている --%>
 <!DOCTYPE html>
 <html>
 <head>
