@@ -12,11 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import model.Avatar;
 import model.StatusLogic;
 
-@WebServlet("/phase2")
-public class phase2 extends HttpServlet {
+@WebServlet("/phase3")
+public class phase3 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public phase2() {
+    public phase3() {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,20 +24,22 @@ public class phase2 extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		int raceNum=Integer.parseInt(request.getParameter("raceNum"));
 		String name=request.getParameter("name");
+		int raceNum=Integer.parseInt(request.getParameter("raceNum"));
+		int jobNum=Integer.parseInt(request.getParameter("jobNum"));
 		int hp=Integer.parseInt(request.getParameter("hp"));
 		int mp=Integer.parseInt(request.getParameter("mp"));
 		int power=Integer.parseInt(request.getParameter("power"));
 		int dex=Integer.parseInt(request.getParameter("dex"));
 		int spd=Integer.parseInt(request.getParameter("spd"));
 		Avatar avatar=new Avatar(name);
-		StatusLogic.raceBonusStatus(avatar,raceNum,hp,mp,power,dex,spd);
+		StatusLogic.jobBonusStatus(avatar,raceNum,jobNum,hp,mp,power,dex,spd);
 
 		request.setAttribute("avatar",avatar);
 
-		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/jsp/secondstatus.jsp");
+		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/jsp/thirdstatus.jsp");
 		rd.forward(request, response);
 	}
 
 }
+

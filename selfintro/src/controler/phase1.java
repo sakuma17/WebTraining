@@ -24,11 +24,11 @@ public class phase1 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String name=request.getParameter("name");
-		Avatar self=new Avatar(name);
+		Avatar avatar=new Avatar(name);
 
-		new StatusLogic(self);
+		new StatusLogic(avatar);
 
-		request.setAttribute("self",self);
+		request.setAttribute("avatar",avatar);
 		RequestDispatcher dispatcher=request.getRequestDispatcher("/WEB-INF/jsp/firststatus.jsp");
 		dispatcher.forward(request, response);
 	}
