@@ -21,6 +21,9 @@ public class Login extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String name=request.getParameter("name");
 		String pass=request.getParameter("pass");
@@ -36,9 +39,6 @@ public class Login extends HttpServlet {
 		}
 		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/jsp/loginResult.jsp");
 		rd.forward(request, response);
-	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	}
 
 }
