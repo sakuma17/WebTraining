@@ -1,0 +1,38 @@
+body{
+	margin:0 auto;
+	width:800px;
+	background:pink;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	text-align:center;
+}
+
+.pink{
+	color:pink;
+}
+
+.title{
+	font-size:27px;
+	background:white;
+	border:5px solid;
+}
+
+
+button{
+	width:180px;
+	height:180px;
+	border-radius:50%;
+	text-align: center;
+}
+
+button > img{
+	position:relative;
+	bottom:2px;
+	right:8px
+}
+
+img{
+	width:180px;
+	height:180px;
+}
