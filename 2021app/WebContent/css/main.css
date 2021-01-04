@@ -26,6 +26,10 @@ button{
 	text-align: center;
 }
 
+button:hover{
+	cursor:pointer;
+}
+
 button > img{
 	position:relative;
 	bottom:2px;

@@ -12,11 +12,11 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 <link rel="stylesheet" href="css/main.css">
-<title>jsp1</title>
+<title>神経衰弱もどき</title>
 </head>
 <body>
 <p class="title">星や背景の色が同じキャラがペア！めくりっぱなし神経衰弱</p>
-<p class="pink">作者の力不足により、めくるだけのアプリケーションになってしまいました…</p>
+<p class="pink">作者の力不足により、めくるだけのアプリになってしまいました…</p>
 	<form action="/2021app/start" method="post">
 	<% for(int i=0;i<nums.length;i++){ %>
 		<%if(opend[i]==0){ %>
