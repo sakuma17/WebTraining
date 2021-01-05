@@ -3,7 +3,6 @@ package controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,7 +18,7 @@ public class CounterServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
+/*
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);//お約束
 		Integer count=0;
@@ -27,7 +26,7 @@ public class CounterServlet extends HttpServlet {
 		application.setAttribute("count",count);
 		System.out.println("initが実行されました");
 	}
-
+*/
 	public void destroy() {
 		System.out.println("destroy()が実行されました");
 	}
@@ -46,7 +45,7 @@ public class CounterServlet extends HttpServlet {
 		out.println("</head>");
 		out.println("<body>");
 		out.println("<p>訪問回数:"+count+"</p>");
-		out.println("<a href=\"/example/CounterServlet\">更新</a>");
+		out.println("<a href=\"/initLesson/CounterServlet\">更新</a>");
 		out.println("</body>");
 		out.println("</html>");
 	}
