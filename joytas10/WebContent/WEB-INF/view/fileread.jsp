@@ -10,7 +10,7 @@ List<String> lines=(List<String>)request.getAttribute("lines");
 <title>Joytas10</title>
 </head>
 <body>
-<a href="/joytas10/FileWriter">書く</a>
+<a href="/joytas10/FileWrite">書く</a>
 <%if(lines != null && lines.size() > 0) {%>
 <ul>
 <%for(String line:lines){ %>

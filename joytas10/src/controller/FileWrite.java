@@ -15,12 +15,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/FileWriter")
-public class FileWriter extends HttpServlet {
+@WebServlet("/FileWrite")
+public class FileWrite extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/view/filewriter.jsp");
+		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/view/filewrite.jsp");
 	    rd.forward(request, response);
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
@@ -30,7 +30,7 @@ public class FileWriter extends HttpServlet {
 		String path=application.getRealPath("/WEB-INF/data/memo.txt");
 		//System.out.println(path);
 		FileOutputStream fos=new FileOutputStream(path,true);
-		OutputStreamWriter osw=new OutputStreamWriter(fos,"sjis");
+		OutputStreamWriter osw=new OutputStreamWriter(fos,"UTF-8");
 		BufferedWriter bw=new BufferedWriter(osw);
 		Date now=new Date();
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

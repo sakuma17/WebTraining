@@ -14,10 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 public class CounterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public CounterServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 /*
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);//お約束

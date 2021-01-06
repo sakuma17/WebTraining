@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="DiceComp" path="/DiceComp" reloadable="false" source="org.eclipse.jst.jee.server:DiceComp"/><Context docBase="initLesson" path="/initLesson" reloadable="false" source="org.eclipse.jst.jee.server:initLesson"/><Context docBase="numapp" path="/numapp" reloadable="false" source="org.eclipse.jst.jee.server:numapp"/><Context docBase="joytas6" path="/joytas6" reloadable="false" source="org.eclipse.jst.jee.server:joytas6"/><Context docBase="InchToCm" path="/InchToCm" reloadable="false" source="org.eclipse.jst.jee.server:InchToCm"/><Context docBase="joytas7" path="/joytas7" reloadable="false" source="org.eclipse.jst.jee.server:joytas7"/><Context docBase="FilterLesson" path="/FilterLesson" reloadable="false" source="org.eclipse.jst.jee.server:FilterLesson"/><Context docBase="joytas10" path="/joytas10" reloadable="false" source="org.eclipse.jst.jee.server:joytas10"/></Host>
+      <Context docBase="joytas10" path="/joytas10" reloadable="false" source="org.eclipse.jst.jee.server:joytas10"/></Host>
     </Engine>
   </Service>
 </Server>

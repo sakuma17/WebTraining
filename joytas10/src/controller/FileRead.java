@@ -20,9 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 public class FileRead extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public FileRead() {
-    }
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    ServletContext application=this.getServletContext();
 	    String path=application.getRealPath("/WEB-INF/data/memo.txt");
@@ -40,7 +37,7 @@ public class FileRead extends HttpServlet {
 	    	RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/view/fileread.jsp");
 	    	rd.forward(request, response);
 	    }catch(FileNotFoundException e){
-	    	response.sendRedirect("/joytas10/FileWriter");
+	    	response.sendRedirect("/joytas10/FileWrite");
 	    }finally {
 	    	if(br!=null) {
 	    		br.close();
