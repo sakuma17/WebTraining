@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -32,6 +33,9 @@ public class Main extends HttpServlet {
 			request.setAttribute("error","未記入の項目があります");
 		}else {
 			Vegetable vege=new Vegetable(name,price);
+			if(list==null) {
+				list=new ArrayList<>();
+			}
 			list.add(vege);
 			session.setAttribute("list", list);
 			request.setAttribute("message", name+"をカートに追加しました");

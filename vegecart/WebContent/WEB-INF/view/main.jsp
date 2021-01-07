@@ -4,6 +4,12 @@
 	List<Vegetable>list=(List<Vegetable>)session.getAttribute("list");
 	String error=(String)request.getAttribute("error");
 	String message=(String)request.getAttribute("message");
+	int sum=0;
+	if(list!=null){
+		for(int i=0;i<list.size();i++){
+			sum+=list.get(i).getPrice();
+		}
+	}
 %>
 <!DOCTYPE html>
 <html>
@@ -38,9 +44,8 @@
 <input type="text" name="price"><br>
 <input type="submit" value="カートに追加">
 </form>
-<%
-	if(list!=null &&list.size()>0){
-%>
+<%if(list!=null){%>
+	<p>合計:<%=sum %>円</p>
 	<table>
 	<tr><th>商品名</th><th>価格</th></tr>
 	<%

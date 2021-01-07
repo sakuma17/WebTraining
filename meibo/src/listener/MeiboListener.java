@@ -16,9 +16,9 @@ import model.Person;
 
 @WebListener
 public class MeiboListener implements ServletContextListener {
-
-
     public void contextDestroyed(ServletContextEvent sce)  {
+    }
+    public void contextInitialized(ServletContextEvent sce)  {
     	ServletContext application=sce.getServletContext();
     	String path=application.getRealPath("/WEB-INF/data/newsample.csv");
     	List<Person> list=new ArrayList<>();
@@ -45,8 +45,4 @@ public class MeiboListener implements ServletContextListener {
 		}
     	application.setAttribute("list",list);
     }
-
-    public void contextInitialized(ServletContextEvent sce)  {
-    }
-
 }

@@ -13,7 +13,7 @@ public class Main extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.sendRedirect("https://joytas.net");
+		response.sendRedirect("/InchToCm/ItoC");
 		System.out.println("Hello");
 	}
 
