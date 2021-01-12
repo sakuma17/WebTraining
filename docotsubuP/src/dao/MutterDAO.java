@@ -44,7 +44,7 @@ public class MutterDAO {
 		List<Mutter> list=new ArrayList<>();
 		try {
 			this.connect();
-			ps=db.prepareStatement("SELECT * FROM todos ORDER BY id DESC");
+			ps=db.prepareStatement("SELECT * FROM mutters ORDER BY id DESC");
 			rs=ps.executeQuery();
 			while(rs.next()) {
 				int id=rs.getInt("id");

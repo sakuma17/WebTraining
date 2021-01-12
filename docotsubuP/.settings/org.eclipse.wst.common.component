@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="docotsubuP">
+    <wb-module deploy-name="docoTsubuP">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="docotsubuP"/>
-        <property name="java-output-path" value="/docotsubuP/build/classes"/>
+        <property name="java-output-path" value="/docoTsubuP/build/classes"/>
+        <property name="context-root" value="docoTsubuP"/>
     </wb-module>
 </project-modules>
