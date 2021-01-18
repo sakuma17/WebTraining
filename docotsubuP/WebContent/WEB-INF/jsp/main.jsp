@@ -25,7 +25,7 @@
 	</c:if>
 	<c:forEach var="mutter" items="${mutterList}">
 		<p>
-			<c:out value="${mutter.userName}" />:
+			<c:out value="${mutter.name}" />:
 			<c:out value="${mutter.text}" />
 		</p>
 	</c:forEach>
