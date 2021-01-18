@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ include file="/common.jsp" %>
-    <%
+	pageEncoding="UTF-8"%>
+<%@ include file="/common.jsp"%>
+<%
     Date date =new Date();
     SimpleDateFormat sdf=new SimpleDateFormat("MM月dd日");
     String today=sdf.format(date);
@@ -13,7 +13,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=name %>さんの<%=today %>の運勢は…
+	<%=name %>さんの<%=today %>の運勢は…
 
 </body>
 </html>
