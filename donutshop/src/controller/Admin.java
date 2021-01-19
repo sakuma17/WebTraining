@@ -35,6 +35,7 @@ public class Admin extends HttpServlet {
 		String imgname=part.getSubmittedFileName();
 		//String imgname=Paths.get(part.getSubmittedFileName()).getFileName().toString();
 		String path=getServletContext().getRealPath("/upload");
+		System.out.println(path);
 		part.write(path+File.separator+imgname);
 		DonutDAO dao=new DonutDAO();
 		dao.insertOne(new Donut(name,price,imgname));
