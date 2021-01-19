@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.container{
+padding-top:20px;
+padding-bottom:20px;
+}
+td>img{
+width:200px;
+}
+input.form-control{
+	width:500px;
+}
+table.table{
+	width:70%;
+}
+.alert{
+width:46%
+}
+
+td>img,.sampleImg{
+width:200px;
+}
+input.form-control{
+	width:500px;
+}
+table.table{
+	width:70%;
+}
+.alert{
+	width:46%;
+}
